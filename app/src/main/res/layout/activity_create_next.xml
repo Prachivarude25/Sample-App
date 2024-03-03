@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreateNextActivity"
+    android:background="@drawable/create"
+    android:padding="16dp">
+
+    <RelativeLayout
+        android:id="@+id/tittle_bar_layout_next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/page_tittle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Notes"
+            android:textColor="@color/colorWhite"
+            android:textSize="32sp"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/save_note_btn"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:contentDescription="TODO"
+            android:src="@drawable/bg_done" />
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/tittle_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="60dp"
+        android:background="@drawable/rounded_corner"
+        android:backgroundTint="@color/colorWhite"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/notes_tittle_text"
+            android:hint="Tittle"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_marginVertical="8dp"
+            android:padding="12dp"
+            android:textColor="@color/colorBlack"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/notes_content_text"
+            android:hint="Content"
+            android:textSize="20dp"
+            android:gravity="top"
+            android:minLines="30"
+            android:layout_marginVertical="8dp"
+            android:padding="12dp"
+            android:textColor="@color/colorBlack"/>
+    </LinearLayout>
+
+
+</RelativeLayout>
